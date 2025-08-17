@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visual Table Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .example-container {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        table {
+            margin: 20px 0;
+        }
+        .highlight {
+            background-color: #fffacd;
+        }
+        .span-demo {
+            background-color: #e8f5e9;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Tables - Visual Examples</h1>
+    
+    <div class="example-container">
+        <h2>Example 1: Basic Table Structure</h2>
+        <p>This shows the most basic table with borders visible:</p>
+        <table border="1">
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </table>
+        <p><strong>Key Points:</strong> Each <code>&lt;tr&gt;</code> creates a row, each <code>&lt;td&gt;</code> creates a cell.</p>
+    </div>
+    
+    <div class="example-container">
+        <h2>Example 2: Headers vs Data Cells</h2>
+        <p>Notice how headers (<code>&lt;th&gt;</code>) are bold and centered by default:</p>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="example-container">
+        <h2>Example 3: Column Spanning (colspan)</h2>
+        <p>The yellow cell spans across 3 columns using <code>colspan="3"</code>:</p>
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+            </tr>
+            <tr>
+                <td class="highlight" colspan="3" align="center">Team Meeting (All Days)</td>
+            </tr>
+            <tr>
+                <td>Work</td>
+                <td>Study</td>
+                <td>Project</td>
+            </tr>
+        </table>
+        <p><strong>Note:</strong> When a cell spans 3 columns, we only have one <code>&lt;td&gt;</code> in that row!</p>
+    </div>
+    
+    <div class="example-container">
+        <h2>Example 4: Row Spanning (rowspan)</h2>
+        <p>The green cell spans down 3 rows using <code>rowspan="3"</code>:</p>
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td class="span-demo" rowspan="3">Morning<br>9AM-12PM</td>
+                <td>Coding</td>
+                <td>Lab A</td>
+            </tr>
+            <tr>
+                <!-- No cell here because Morning spans this row -->
+                <td>Testing</td>
+                <td>Lab B</td>
+            </tr>
+            <tr>
+                <!-- No cell here because Morning spans this row -->
+                <td>Review</td>
+                <td>Room 101</td>
+            </tr>
+        </table>
+        <p><strong>Important:</strong> The rows that are spanned don't include that cell!</p>
+    </div>
+    
+    <div class="example-container">
+        <h2>Example 5: Complex Spanning</h2>
+        <p>Combining both colspan and rowspan:</p>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th rowspan="2">Day</th>
+                <th colspan="2">Sessions</th>
+                <th rowspan="2">Notes</th>
+            </tr>
+            <tr>
+                <!-- Day cell continues from above -->
+                <th>Morning</th>
+                <th>Afternoon</th>
+                <!-- Notes cell continues from above -->
+            </tr>
+            <tr>
+                <t

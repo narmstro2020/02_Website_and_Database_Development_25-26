@@ -11,7 +11,6 @@
 | [5. Internal CSS](#5-internal-css) | Styling within the HTML document |
 | [6. External CSS](#6-external-css) | Linking separate CSS files |
 | [Vocabulary](#vocabulary) | Key terms and definitions |
-| [Coding Assignments](#coding-assignments) | Practice exercises |
 | [Summary](#summary) | Key takeaways |
 | [Resources](#resources) | Additional learning materials |
 
@@ -446,47 +445,6 @@ You can link multiple CSS files:
 
 ---
 
-## Coding Assignments
-
-[⬆ Back to Top](#table-of-contents)
-
-### Assignment 1: Personal Profile Page
-Create a personal profile page using **inline CSS only**. Style at least 5 different elements.
-
-**Requirements:**
-- Use h1 for your name
-- Use p tags for bio information
-- Include a list (ul or ol) of hobbies
-- Style each element differently using inline CSS
-- Use at least 3 different CSS properties
-
-[Assignment 1 Template](assignment1-template.md) | [Assignment 1 Solution](assignment1-solution.md)
-
-### Assignment 2: Recipe Page
-Create a recipe page using **internal CSS only**. 
-
-**Requirements:**
-- Use proper HTML structure (header, main, footer)
-- Include recipe title (h1), ingredients (ul), and instructions (ol)
-- Style all headings the same way
-- Style all paragraphs the same way
-- Use at least 5 different CSS properties
-
-[Assignment 2 Template](assignment2-template.md) | [Assignment 2 Solution](assignment2-solution.md)
-
-### Assignment 3: Multi-Page Website
-Create a 3-page website using **external CSS**.
-
-**Requirements:**
-- Create home.html, about.html, and contact.html
-- Create one styles.css file
-- Link all pages to the same CSS file
-- Include navigation links between pages
-- Style headers, paragraphs, and links consistently
-
-[Assignment 3 Template](Assignment/Assignment.md) | [Assignment 3 Solution](assignment3-solution.md)
-
----
 
 ## Summary
 

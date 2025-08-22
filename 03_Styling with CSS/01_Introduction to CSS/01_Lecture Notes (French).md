@@ -11,7 +11,6 @@
 | [5. CSS Interne](#5-css-interne) | Stylisation dans le document HTML |
 | [6. CSS Externe](#6-css-externe) | Liaison de fichiers CSS séparés |
 | [Vocabulaire](#vocabulaire) | Termes et définitions clés |
-| [Devoirs de Programmation](#devoirs-de-programmation) | Exercices pratiques |
 | [Résumé](#résumé) | Points clés à retenir |
 | [Ressources](#ressources) | Matériel d'apprentissage supplémentaire |
 
@@ -443,48 +442,6 @@ Vous pouvez lier plusieurs fichiers CSS :
 | **Feuille de Style** | Une collection de règles CSS |
 | **Balise Link** | Élément HTML utilisé pour connecter des fichiers CSS externes |
 | **Spécificité** | Règles déterminant quelle règle CSS s'applique quand plusieurs règles ciblent le même élément |
-
----
-
-## Devoirs de Programmation
-
-[⬆ Retour en Haut](#table-des-matières)
-
-### Devoir 1 : Page de Profil Personnel
-Créez une page de profil personnel en utilisant **uniquement du CSS en ligne**. Stylisez au moins 5 éléments différents.
-
-**Exigences :**
-- Utilisez h1 pour votre nom
-- Utilisez des balises p pour les informations biographiques
-- Incluez une liste (ul ou ol) de loisirs
-- Stylisez chaque élément différemment avec du CSS en ligne
-- Utilisez au moins 3 propriétés CSS différentes
-
-[Modèle Devoir 1](assignment1-template.md) | [Solution Devoir 1](assignment1-solution.md)
-
-### Devoir 2 : Page de Recette
-Créez une page de recette en utilisant **uniquement du CSS interne**.
-
-**Exigences :**
-- Utilisez une structure HTML appropriée (header, main, footer)
-- Incluez le titre de la recette (h1), les ingrédients (ul) et les instructions (ol)
-- Stylisez tous les titres de la même manière
-- Stylisez tous les paragraphes de la même manière
-- Utilisez au moins 5 propriétés CSS différentes
-
-[Modèle Devoir 2](assignment2-template.md) | [Solution Devoir 2](assignment2-solution.md)
-
-### Devoir 3 : Site Web Multi-Pages
-Créez un site web de 3 pages en utilisant du **CSS externe**.
-
-**Exigences :**
-- Créez home.html, about.html et contact.html
-- Créez un fichier styles.css
-- Liez toutes les pages au même fichier CSS
-- Incluez des liens de navigation entre les pages
-- Stylisez les en-têtes, paragraphes et liens de manière cohérente
-
-[Modèle Devoir 3](Assignment/Assignment.md) | [Solution Devoir 3](assignment3-solution.md)
 
 ---
 

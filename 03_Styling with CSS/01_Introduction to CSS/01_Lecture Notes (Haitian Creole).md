@@ -11,7 +11,6 @@
 | [5. CSS Entèn](#5-css-entèn) | Estil nan dokiman HTML |
 | [6. CSS Ekstèn](#6-css-ekstèn) | Konekte fichye CSS separe |
 | [Vokabilè](#vokabilè) | Tèm ak definisyon kle |
-| [Devwa Pwogramasyon](#devwa-pwogramasyon) | Egzèsis pratik |
 | [Rezime](#rezime) | Pwen kle yo |
 | [Resous](#resous) | Materyèl aprantisaj adisyonèl |
 
@@ -443,48 +442,6 @@ Ou ka konekte plizyè fichye CSS:
 | **Fèy Estil** | Yon koleksyon règ CSS |
 | **Etikèt Link** | Eleman HTML yo itilize pou konekte fichye CSS ekstèn |
 | **Espesifisite** | Règ ki detèmine ki règ CSS aplike lè plizyè règ vize menm eleman |
-
----
-
-## Devwa Pwogramasyon
-
-[⬆ Retounen Anwo](#tab-matyè)
-
-### Devwa 1: Paj Pwofil Pèsonèl
-Kreye yon paj pwofil pèsonèl lè w itilize **sèlman CSS aliy**. Bay estil omwen 5 eleman diferan.
-
-**Kondisyon:**
-- Itilize h1 pou non ou
-- Itilize etikèt p pou enfòmasyon biyografik
-- Mete yon lis (ul oswa ol) pasa yo
-- Bay chak eleman estil diferan ak CSS aliy
-- Itilize omwen 3 pwopriyete CSS diferan
-
-[Modèl Devwa 1](assignment1-template.md) | [Solisyon Devwa 1](assignment1-solution.md)
-
-### Devwa 2: Paj Resèt
-Kreye yon paj resèt lè w itilize **sèlman CSS entèn**.
-
-**Kondisyon:**
-- Itilize bon estrikti HTML (header, main, footer)
-- Mete tit resèt (h1), engredyan (ul) ak enstriksyon (ol)
-- Bay tout tit yo menm estil
-- Bay tout paragraf yo menm estil
-- Itilize omwen 5 pwopriyete CSS diferan
-
-[Modèl Devwa 2](assignment2-template.md) | [Solisyon Devwa 2](assignment2-solution.md)
-
-### Devwa 3: Sit Entènèt Plizyè Paj
-Kreye yon sit entènèt 3 paj lè w itilize **CSS ekstèn**.
-
-**Kondisyon:**
-- Kreye home.html, about.html, ak contact.html
-- Kreye yon fichye styles.css
-- Konekte tout paj yo ak menm fichye CSS
-- Mete lyen navigasyon ant paj yo
-- Bay antèt, paragraf ak lyen estil konsistan
-
-[Modèl Devwa 3](Assignment/Assignment.md) | [Solisyon Devwa 3](assignment3-solution.md)
 
 ---
 

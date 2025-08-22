@@ -11,7 +11,6 @@
 | [5. CSS Interno](#5-css-interno) | Estilización dentro del documento HTML |
 | [6. CSS Externo](#6-css-externo) | Vinculación de archivos CSS separados |
 | [Vocabulario](#vocabulario) | Términos y definiciones clave |
-| [Tareas de Programación](#tareas-de-programación) | Ejercicios de práctica |
 | [Resumen](#resumen) | Puntos clave |
 | [Recursos](#recursos) | Materiales de aprendizaje adicionales |
 
@@ -443,48 +442,6 @@ Puedes vincular múltiples archivos CSS:
 | **Hoja de Estilo** | Una colección de reglas CSS |
 | **Etiqueta Link** | Elemento HTML usado para conectar archivos CSS externos |
 | **Especificidad** | Reglas que determinan qué regla CSS se aplica cuando múltiples reglas apuntan al mismo elemento |
-
----
-
-## Tareas de Programación
-
-[⬆ Volver al Inicio](#tabla-de-contenidos)
-
-### Tarea 1: Página de Perfil Personal
-Crea una página de perfil personal usando **solo CSS en línea**. Estiliza al menos 5 elementos diferentes.
-
-**Requisitos:**
-- Usa h1 para tu nombre
-- Usa etiquetas p para información biográfica
-- Incluye una lista (ul o ol) de pasatiempos
-- Estiliza cada elemento de manera diferente usando CSS en línea
-- Usa al menos 3 propiedades CSS diferentes
-
-[Plantilla Tarea 1](assignment1-template.md) | [Solución Tarea 1](assignment1-solution.md)
-
-### Tarea 2: Página de Receta
-Crea una página de receta usando **solo CSS interno**.
-
-**Requisitos:**
-- Usa estructura HTML adecuada (header, main, footer)
-- Incluye título de receta (h1), ingredientes (ul) e instrucciones (ol)
-- Estiliza todos los encabezados de la misma manera
-- Estiliza todos los párrafos de la misma manera
-- Usa al menos 5 propiedades CSS diferentes
-
-[Plantilla Tarea 2](assignment2-template.md) | [Solución Tarea 2](assignment2-solution.md)
-
-### Tarea 3: Sitio Web de Múltiples Páginas
-Crea un sitio web de 3 páginas usando **CSS externo**.
-
-**Requisitos:**
-- Crea home.html, about.html y contact.html
-- Crea un archivo styles.css
-- Vincula todas las páginas al mismo archivo CSS
-- Incluye enlaces de navegación entre páginas
-- Estiliza encabezados, párrafos y enlaces consistentemente
-
-[Plantilla Tarea 3](Assignment/Assignment.md) | [Solución Tarea 3](assignment3-solution.md)
 
 ---
 

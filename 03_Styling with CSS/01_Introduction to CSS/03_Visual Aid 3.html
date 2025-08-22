@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Typography Visual Aid</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        h2 {
+            color: #333;
+            border-bottom: 3px solid #eb3349;
+            padding-bottom: 10px;
+            margin-top: 3rem;
+        }
+        
+        /* Font Family Showcase */
+        .font-families {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .font-sample {
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: white;
+            border-left: 4px solid #eb3349;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .font-name {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+            font-family: monospace;
+            background: #f4f4f4;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 3px;
+        }
+        
+        .font-example {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+        
+        .font-alphabet {
+            font-size: 1rem;
+            color: #777;
+            margin-top: 0.5rem;
+        }
+        
+        /* Font Weight Scale */
+        .weight-scale {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .weight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 2rem 0;
+        }
+        
+        .weight-item {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .weight-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .weight-number {
+            font-size: 2rem;
+            color: #eb3349;
+            margin-bottom: 5px;
+        }
+        
+        .weight-name {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* Font Size Scale */
+        .size-scale {
+            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            border: 2px solid #eb3349;
+        }
+        
+        .size-item {
+            margin: 1rem 0;
+            display: flex;
+            align-items: baseline;
+            gap: 20px;
+        }
+        
+        .size-label {
+            min-width: 100px;
+            font-size: 0.9rem;
+            color: #666;
+            font-family: monospace;
+            background: #f4f4f4;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        
+        .size-example {
+            color: #333;
+        }
+        
+        /* Line Height Demonstration */
+        .line-height-demo {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .line-height-example {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .line-height-label {
+            font-size: 0.9rem;
+            color: #eb3349;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .line-height-text {
+            border-left: 3px solid #eb3349;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        /* Text Decoration Examples */
+        .decoration-demo {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .decoration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 2rem 0;
+        }
+        
+        .decoration-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Text Transform */
+        .transform-demo {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .transform-example {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .transform-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Letter & Word Spacing */
+        .spacing-demo {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .spacing-example {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Text Alignment */
+        .alignment-demo {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .alignment-example {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            border: 2px solid #eb3349;
+        }
+        
+        /* Font Style Examples */
+        .style-demo {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .style-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 2rem 0;
+        }
+        
+        .style-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.3rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Typography Anatomy */
+        .anatomy-demo {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            border: 2px solid #eb3349;
+            text-align: center;
+        }
+        
+        .anatomy-text {
+            font-size: 6rem;
+            font-family: Georgia, serif;
+            position: relative;
+            display: inline-block;
+            margin: 2rem 0;
+        }
+        
+        .anatomy-line {
+            position: absolute;
+            left: 0;
+            right: 0;
+            border-top: 1px dashed #eb3349;
+            font-size: 0.8rem;
+            color: #eb3349;
+        }
+        
+        /* Best Practices */
+        .best-practices {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .practice-item {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .good-example {
+            border-left: 4px solid #27ae60;
+        }
+        
+        .bad-example {
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .tip {
+            background: #e8f5e9;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        
+        .warning {
+            background: #ffebee;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Typography - Visual Guide</h1>
+        
+        <!-- Font Families -->
+        <section>
+            <h2>Font Families - The 5 Generic Types</h2>
+            <div class="font-families">
+                <div class="font-sample">
+                    <div class="font-name">font-family: serif;</div>
+                    <div class="font-example" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                        The quick brown fox jumps over the lazy dog
+                    </div>
+                    <div class="font-alphabet" style="font-family: Georgia, serif;">
+                        ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                        abcdefghijklmnopqrstuvwxyz<br>
+                        1234567890 !@#$%^&*()
+                    </div>
+                    <p style="color: #666; font-size: 0.9rem;">✓ Has decorative strokes (serifs) at the ends of letters</p>
+                </div>
+                
+                <div class="font-sample">
+                    <div class="font-name">font-family: sans-serif;</div>
+                    <div class="font-example" style="font-family: Arial, Helvetica, sans-serif;">
+                        The quick brown fox jumps over the lazy dog
+                    </div>
+                    <div class="font-alphabet" style="font-family: Arial, sans-serif;">
+                        ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                        abcdefghijklmnopqrstuvwxyz<br>
+                        1234567890 !@#$%^&*()
+                    </div>
+                    <p style="color: #666; font-size: 0.9rem;">✓ Clean, no decorative strokes - great for screens</p>
+                </div>
+                
+                <div class="font-sample">
+                    <div class="font-name">font-family: monospace;</div>
+                    <div class="font-example" style="font-family: 'Courier New', Courier, monospace;">
+                        The quick brown fox jumps over the lazy dog
+                    </div>
+                    <div class="font-alphabet" style="font-family: 'Courier New', monospace;">
+                        ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                        abcdefghijklmnopqrstuvwxyz<br>
+                        1234567890 !@#$%^&*()
+                    </div>
+                    <p style="color: #666; font-size: 0.9rem;">✓ Each character has the same width - perfect for code</p>
+                </div>
+                
+                <div class="font-sample">
+                    <div class="font-name">font-family: cursive;</div>
+                    <div class="font-example" style="font-family: 'Comic Sans MS', cursive;">
+                        The quick brown fox jumps over the lazy dog
+                    </div>
+                    <div class="font-alphabet" style="font-family: 'Comic Sans MS', cursive;">
+                        ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                        abcdefghijklmnopqrstuvwxyz<br>
+                        1234567890 !@#$%^&*()
+                    </div>
+                    <p style="color: #666; font-size: 0.9rem;">✓ Handwriting-style fonts - use sparingly</p>
+                </div>
+                
+                <div class="font-sample">
+                    <div class="font-name">font-family: fantasy;</div>
+                    <div class="font-example" style="font-family: Impact, fantasy;">
+                        The quick brown fox jumps over the lazy dog
+                    </div>
+                    <div class="font-alphabet" style="font-family: Impact, fantasy;">
+                        ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+                        abcdefghijklmnopqrstuvwxyz<br>
+                        1234567890 !@#$%^&*()
+                    </div>
+                    <p style="color: #666; font-size: 0.9rem;">✓ Decorative fonts - for special effects only</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Font Weight Scale -->
+        <section>
+            <h2>Font Weight - 100 to 900</h2>
+            <div class="weight-scale">
+                <div class="weight-grid">
+                    <div class="weight-item">
+                        <div class="weight-number" style="font-weight: 100;">Aa</div>
+                        <div class="weight-name">100<br>Thin</div>
+                    </div>
+                    <div class="weight-item">
+                        <div class="weight-number" style="font-weight: 200;">Aa</div>
+                        <div class="weight-name">200<br>Extra Light</div>
+                    </div>
+                    <div class="weight-item">
+                        <div class="weight-number" style="font-weight: 300;">Aa</div>
+                        <div class="weight-name">300<br>Light</div>
+                    </div>
+                    <div class="weight-item">
+                        <div class="weight-number" style="font-weight: 400;">Aa</div>
+                        <div class="weight-name">400<br>Normal</div>
+                    </div>
+                    <div class="weight-item">
+                        <div class="weight-number" style="font-weight: 500;">Aa</div>
+                        <div class="weight-name">500<br>Medium</div>
+                    </div>
+                    <div class="weight-item">
+                        <div class="weight-number" style="font-weight: 600;">Aa</div>
+                        <div class="weight-name">600<br>Semi Bold</div>
+                    </div>
+                    <div class="weight-item">
+                        <div class="weight-number" style="font-weight: 700;">Aa</div>
+                        <div class="weight-name">700<br>Bold</div>
+                    </div>
+                    <div class="weight-item">
+                        <div class="weight-number" style="font-weight: 800;">Aa</div>
+                        <div class="weight-name">800<br>Extra Bold</div>
+                    </div>
+                    <div class="weight-item">
+                        <div class="weight-number" style="font-weight: 900;">Aa</div>
+                        <div class="weight-name">900<br>Black</div>
+                    </div>
+                </div>
+                <div class="tip">
+                    💡 <strong>Tip:</strong> "normal" = 400, "bold" = 700
+                </div>
+            </div>
+        </section>
+        
+        <!-- Font Size Scale -->
+        <section>
+            <h2>Font Size Scale</h2>
+            <div class="size-scale">
+                <div class="size-item">
+                    <span class="size-label">12px</span>
+                    <span class="size-example" style="font-size: 12px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">14px</span>
+                    <span class="size-example" style="font-size: 14px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">16px</span>
+                    <span class="size-example" style="font-size: 16px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">18px</span>
+                    <span class="size-example" style="font-size: 18px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">24px</span>
+                    <span class="size-example" style="font-size: 24px;">The quick brown fox jumps over the lazy dog</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">32px</span>
+                    <span class="size-example" style="font-size: 32px;">The quick brown fox jumps</span>
+                </div>
+                <div class="size-item">
+                    <span class="size-label">48px</span>
+                    <span class="size-example" style="font-size: 48px;">The quick brown</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Line Height -->
+        <section>
+            <h2>Line Height (Leading)</h2>
+            <div class="line-height-demo">
+                <div class="line-height-example">
+                    <div class="line-height-label">line-height: 1.0 (Too Tight)</div>
+                    <div class="line-height-text" style="line-height: 1.0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+                
+                <div class="line-height-example">
+                    <div class="line-height-label">line-height: 1.5 (Good for Body Text)</div>
+                    <div class="line-height-text" style="line-height: 1.5;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+                
+                <div class="line-height-example">
+                    <div class="line-height-label">line-height: 2.0 (Spacious)</div>
+                    <div class="line-height-text" style="line-height: 2.0;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Font Style -->
+        <section>
+            <h2>Font Style</h2>
+            <div class="style-demo">
+                <div class="style-grid">
+                    <div class="style-item" style="font-style: normal;">
+                        Normal Text<br>
+                        <span style="font-size: 0.8rem; color: #666;">font-style: normal;</span>
+                    </div>
+                    <div class="style-item" style="font-style: italic;">
+                        Italic Text<br>
+                        <span style="font-size: 0.8rem; color: #666;">font-style: italic;</span>
+                    </div>
+                    <div class="style-item" style="font-style: oblique;">
+                        Oblique Text<br>
+                        <span style="font-size: 0.8rem; color: #666;">font-style: oblique;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Text Decoration -->
+        <section>
+            <h2>Text Decoration</h2>
+            <div class="decoration-demo">
+                <div class="decoration-grid">
+                    <div class="decoration-item" style="text-decoration: none;">
+                        No Decoration
+                    </div>
+                    <div class="decoration-item" style="text-decoration: underline;">
+                        Underline
+                    </div>
+                    <div class="decoration-item" style="text-decoration: overline;">
+                        Overline
+                    </div>
+                    <div class="decoration-item" style="text-decoration: line-through;">
+                        Line Through
+                    </div>
+                    <div class="decoration-item" style="text-decoration: underline overline;">
+                        Combined
+                    </div>
+                    <div class="decoration-item" style="text-decoration: underline wavy red;">
+                        Wavy Red
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Text Transform -->
+        <section>
+            <h2>Text Transform</h2>
+            <div class="transform-demo">
+                <div class="transform-example">
+                    <div class="transform-label">Original: The quick brown fox</div>
+                    <div style="text-transform: uppercase; color: #eb3349;">text-transform: uppercase; → THE QUICK BROWN FOX</div>
+                </div>
+                <div class="transform-example">
+                    <div class="transform-label">Original: The Quick Brown Fox</div>
+                    <div style="text-transform: lowercase; color: #eb3349;">text-transform: lowercase; → the quick brown fox</div>
+                </div>
+                <div class="transform-example">
+                    <div class="transform-label">Original: the quick brown fox</div>
+                    <div style="text-transform: capitalize; color: #eb3349;">text-transform: capitalize; → The Quick Brown Fox</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Letter & Word Spacing -->
+        <section>
+            <h2>Letter & Word Spacing</h2>
+            <div class="spacing-demo">
+                <div class="spacing-example">
+                    <div style="letter-spacing: -2px;">letter-spacing: -2px (Tight)</div>
+                </div>
+                <div class="spacing-example">
+                    <div style="letter-spacing: normal;">letter-spacing: normal (Default)</div>
+                </div>
+                <div class="spacing-example">
+                    <div style="letter-spacing: 2px;">letter-spacing: 2px (Loose)</div>
+                </div>
+                <div class="spacing-example">
+                    <div style="letter-spacing: 5px;">letter-spacing: 5px (Very Loose)</div>
+                </div>
+                <div class="spacing-example">
+                    <div style="word-spacing: -5px;">word-spacing: -5px (Words closer together)</div>
+                </div>
+                <div class="spacing-example">
+                    <div style="word-spacing: 10px;">word-spacing: 10px (Words farther apart)</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Text Alignment -->
+        <section>
+            <h2>Text Alignment</h2>
+            <div class="alignment-demo">
+                <div class="alignment-example" style="text-align: left;">
+                    <strong>text-align: left;</strong><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is the default alignment for left-to-right languages.
+                </div>
+                <div class="alignment-example" style="text-align: center;">
+                    <strong>text-align: center;</strong><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Text is centered within its container.
+                </div>
+                <div class="alignment-example" style="text-align: right;">
+                    <strong>text-align: right;</strong><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Text aligns to the right edge.
+                </div>
+                <div class="alignment-example" style="text-align: justify;">
+                    <strong>text-align: justify;</strong><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Text stretches to fill the full width, creating even edges on both sides.
+                </div>
+            </div>
+        </section>
+        
+        <!-- Typography Anatomy -->
+        <section>
+            <h2>Typography Anatomy</h2>
+            <div class="anatomy-demo">
+                <div style="position: relative; display: inline-block;">
+                    <div class="anatomy-text">Typography</div>
+                    <div class="anatomy-line" style="top: 25%;">← Cap Height</div>
+                    <div class="anatomy-line" style="top: 45%;">← X-Height</div>
+                    <div class="anatomy-line" style="top: 75%;">← Baseline</div>
+                    <div class="anatomy-line" style="top: 95%;">← Descender</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Best Practices -->
+        <section>
+            <h2>Typography Best Practices</h2>
+            <div class="best-practices">
+                <div class="practice-item good-example">
+                    <strong>✓ Good: Readable Body Text</strong>
+                    <p style="font-size: 16px; line-height: 1.6; max-width: 65ch;">
+                        This text uses 16px font size with 1.6 line height and limits the line length to about 65 characters for optimal readability. The contrast between text and background is strong.
+                    </p>
+                </div>
+                
+                <div class="practice-item bad-example">
+                    <strong>✗ Bad: Hard to Read</strong>
+                    <p style="font-size: 11px; line-height: 1.0; color: #999;">
+                        This text is too small (11px), has tight line spacing (1.0), poor contrast, and extends across the full width making it difficult to read. Users will struggle with this formatting.
+                    </p>
+                </div>
+                
+                <div class="practice-item good-example">
+                    <strong>✓ Good: Clear Hierarchy</strong>
+                    <h3 style="font-size: 2rem; margin: 0.5rem 0;">Main Heading</h3>
+                    <h4 style="font-size: 1.5rem; margin: 0.5rem 0; color: #666;">Subheading</h4>
+                    <p style="font-size: 1rem;">Body text with clear size differences.</p>
+                </div>
+                
+                <div class="practice-item">
+                    <strong>Font Stack Example:</strong>
+                    <code style="display: block; background: #f4f4f4; padding: 1rem; border-radius: 5px; margin: 1rem 0;">
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                    </code>
+                    <p style="color: #666; font-size: 0.9rem;">Always provide fallback fonts!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

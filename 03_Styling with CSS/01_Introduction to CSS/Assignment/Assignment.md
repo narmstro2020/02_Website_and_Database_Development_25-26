@@ -15,7 +15,7 @@ Create a 3-page website using **external CSS**. All pages should link to the sam
 ```
 assignment3/
 │
-├── home.html
+├── index.html
 ├── about.html
 ├── contact.html
 └── styles.css
@@ -23,7 +23,7 @@ assignment3/
 
 ## HTML Templates
 
-### home.html
+### index.html
 ```html
 <!DOCTYPE html>
 <html>

@@ -15,7 +15,7 @@ Create a 3-page website using **external CSS**. All pages should link to the sam
 ```
 assignment3/
 │
-├── home.html
+├── index.html
 ├── about.html
 ├── contact.html
 └── styles.css
@@ -23,10 +23,10 @@ assignment3/
 
 ## HTML Templates
 
-### home.html
+### index.html
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Home - My Website</title>
     <meta charset="UTF-8">
@@ -38,7 +38,7 @@ assignment3/
         <h1>Welcome to My Website</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -68,7 +68,7 @@ assignment3/
 ### about.html
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>About - My Website</title>
     <meta charset="UTF-8">
@@ -80,7 +80,7 @@ assignment3/
         <h1>About Us</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -110,7 +110,7 @@ assignment3/
 ### contact.html
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Contact - My Website</title>
     <meta charset="UTF-8">
@@ -122,7 +122,7 @@ assignment3/
         <h1>Contact Us</h1>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>

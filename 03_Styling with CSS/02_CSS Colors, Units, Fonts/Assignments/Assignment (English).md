@@ -48,8 +48,8 @@ index.html
     <main>
         <section>
             <h2>Named Colors</h2>
-            <h3>This text uses a named color.</p>
-            <h4>This has a different named color.</p>
+            <h3>This text uses a named color.</h3>
+            <h4>This has a different named color.</h4>
             <p>This combines text and background named colors.</p>
             <article>
                 This article has a named color background.
@@ -69,25 +69,25 @@ index.html
 
 styles.css
 ```css
-        h2{
+h2{
 
-         }
+}
 
-         h3{
+h3{
 
-         }
+}
 
-         h4{
+h4{
 
-         }
+}
 
-         p{
+p{
 
-         }
+}
 
-         article{
+article{
 
-         }
+}
 
 
 ```

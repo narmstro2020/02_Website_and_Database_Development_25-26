@@ -11,7 +11,6 @@
 | [CSS Units](#css-units) | Absolute and Relative Units |
 | [CSS Fonts](#css-fonts) | Font Properties and Web Typography |
 | [Vocabulary](#vocabulary) | Key terms and definitions |
-| [Assignments](#assignments) | Practice exercises |
 | [Summary](#summary) | Key takeaways |
 | [Resources](#resources) | Additional learning materials |
 
@@ -740,25 +739,6 @@ pre {
 [Back to Top](#css-colors-units-and-fonts---lecture-notes)
 
 ---
-
-## Assignments
-
-### Assignment 1: Color Palette Creator
-Create a webpage that demonstrates all color formats by building a color palette showcase.
-[View Assignment 1](Assignments/Assignment (English).md)
-
-### Assignment 2: Responsive Typography
-Build a typography specimen page using various font properties and units.
-[View Assignment 2](assignment2.md)
-
-### Assignment 3: Complete Style Guide
-Create a comprehensive style guide combining colors, units, and fonts.
-[View Assignment 3](assignment3.md)
-
-### Solutions
-- [Assignment 1 Solution](assignment1-solution.md)
-- [Assignment 2 Solution](assignment2-solution.md)
-- [Assignment 3 Solution](assignment3-solution.md)
 
 [Back to Top](#css-colors-units-and-fonts---lecture-notes)
 

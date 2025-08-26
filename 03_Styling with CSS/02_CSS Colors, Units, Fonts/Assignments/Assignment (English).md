@@ -48,8 +48,8 @@ index.html
     <main>
         <section>
             <h2>Named Colors</h2>
-            <p>This text uses a named color.</p>
-            <p>This has a different named color.</p>
+            <h3>This text uses a named color.</p>
+            <h4>This has a different named color.</p>
             <p>This combines text and background named colors.</p>
             <article>
                 This article has a named color background.
@@ -69,19 +69,25 @@ index.html
 
 styles.css
 ```css
-        body {
-            /* Add a light background color */
-        }
-        
-        h1 {
-            /* Center and style the main heading */
-        }
-        
-        section {
-            /* Add spacing between sections */
-        }
-        
-        /* Add your color styles below */
+        h2{
+
+         }
+
+         h3{
+
+         }
+
+         h4{
+
+         }
+
+         p{
+
+         }
+
+         article{
+
+         }
 
 
 ```

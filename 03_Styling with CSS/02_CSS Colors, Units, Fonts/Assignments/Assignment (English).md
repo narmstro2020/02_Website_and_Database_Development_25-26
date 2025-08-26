@@ -8,10 +8,6 @@ Create a webpage that demonstrates your understanding of CSS color formats by bu
 ### HTML Structure
 Create an HTML file with:
 1. A main heading (h1) for the page title
-2. Six sections, each containing:
-   - A subheading (h2) for the color format name
-   - At least 3 paragraph elements demonstrating different colors
-   - One article element with colored background
 
 ### CSS Requirements
 You must demonstrate ALL of the following color formats:
@@ -21,14 +17,7 @@ You must demonstrate ALL of the following color formats:
 4. **RGBA Section**: Show transparency with at least 3 different alpha values
 5. **HSL Section**: Create a color scheme using hsl()
 6. **HSLA Section**: Combine HSL with transparency
-
-### Specific Tasks
-1. Create a "rainbow" effect using at least 7 different colors in any format
-2. Demonstrate transparency by layering elements with RGBA or HSLA
-3. Create a monochromatic color scheme (different shades of the same color)
-4. Style text color AND background color for each section
-5. Add a footer with a gradient-like effect using transparency
-
+   
 ## Starter Code
 
 index.html
@@ -41,34 +30,29 @@ index.html
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>CSS Color Palette Showcase</h1>
-    </header>
-    
+   
     <main>
         <section>
-            <h2>Named Colors</h2>
-            <h3>This text uses a named color.</h3>
-            <h4>This has a different named color.</h4>
-            <p>This combines text and background named colors.</p>
-            <article>
-                This article has a named color background.
-            </article>
-        </section>
-        
-        <!-- Add more sections for each color format -->
+            <h1>Named Colors</h1>
+            <h2>Hex Color</h2>
+            <h3>RGB Color</h3>
+            <h4>RGBA Color</h4>
+            <h5>HSL Color</h5>
+            <h6>HSLA Color</h6>
         
     </main>
     
-    <footer>
-        <p>Footer with creative color effects</p>
-    </footer>
+
 </body>
 </html>
 ```
 
 styles.css
 ```css
+h1{
+
+}
+
 h2{
 
 }
@@ -81,11 +65,11 @@ h4{
 
 }
 
-p{
+h5{
 
 }
 
-article{
+h6{
 
 }
 

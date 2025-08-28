@@ -39,6 +39,7 @@ index.html
             <h4>RGBA Color</h4>
             <h5>HSL Color</h5>
             <h6>HSLA Color</h6>
+         </section>
         
     </main>
     

@@ -11,12 +11,12 @@ Create an HTML file with:
 
 ### CSS Requirements
 You must demonstrate ALL of the following color formats:
-1. **Named Colors Section**: Use at least 5 different named colors
-2. **Hexadecimal Section**: Use both full (#RRGGBB) and shorthand (#RGB) hex colors
-3. **RGB Section**: Create colors using rgb() values
-4. **RGBA Section**: Show transparency with at least 3 different alpha values
-5. **HSL Section**: Create a color scheme using hsl()
-6. **HSLA Section**: Combine HSL with transparency
+1. **Named Colors Section**: Use at least 1 named color (text or background or both)
+2. **Hexadecimal Section**: Use at least 1 hex valued color (text or background or both)
+3. **RGB Section**: Use at least 1 rgb() valued color (text or background or both)
+4. **RGBA Section**: Use at least 1 rgba() valued color (text or background or both)
+5. **HSL Section**: Use at least 1 hsl() valued color (text or background or both)
+6. **HSLA Section**: Use at least 1 hsla() valued color (text or background or both)
    
 ## Starter Code
 

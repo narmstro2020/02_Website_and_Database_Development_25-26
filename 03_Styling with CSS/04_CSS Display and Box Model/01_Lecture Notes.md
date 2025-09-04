@@ -9,7 +9,6 @@
 | [CSS Display Properties](#css-display-properties) | Understanding block, inline, inline-block, and none |
 | [The CSS Box Model](#the-css-box-model) | Margin, padding, border, and content |
 | [Visual Examples](#visual-examples) | Interactive demonstrations |
-| [Coding Assignments](#coding-assignments) | Practice exercises |
 | [Summary](#summary) | Key takeaways |
 | [Resources](#resources) | Additional learning materials |
 
@@ -945,26 +944,6 @@ Understanding margin collapse helps you:
 </body>
 </html>
 ```
-
-[↑ Back to Top](#table-of-contents)
-
----
-
-## Coding Assignments
-
-### Assignment 1: Display Property Practice
-Create a navigation menu using different display properties. [View Assignment Template](Assignments/assignment1-template.md)
-
-### Assignment 2: Box Model Spacing
-Build a card layout demonstrating mastery of the box model. [View Assignment Template](Assignments/Assignment.md)
-
-### Assignment 3: Combined Layout Challenge
-Create a complete webpage section using both display properties and box model. [View Assignment Template](Assignments/assignment3-template.md)
-
-### Solutions
-- [Assignment 1 Solution](Assignments/assignment1-solution.md)
-- [Assignment 2 Solution](Assignments/assignment2-solution.md)
-- [Assignment 3 Solution](Assignments/assignment3-solution.md)
 
 [↑ Back to Top](#table-of-contents)
 

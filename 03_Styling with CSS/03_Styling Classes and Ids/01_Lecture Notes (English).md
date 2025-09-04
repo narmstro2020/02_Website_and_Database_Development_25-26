@@ -316,7 +316,7 @@ this is crucial for writing effective CSS.
 
 From **most specific** (wins) to **least specific** (loses):
 
-1. **Inline styles** (style attribute) - We haven't covered this yet
+1. **Inline styles** (style attribute)
 2. **IDs** (#idname)
 3. **Classes** (.classname)
 4. **Elements** (p, h1, div, etc.)

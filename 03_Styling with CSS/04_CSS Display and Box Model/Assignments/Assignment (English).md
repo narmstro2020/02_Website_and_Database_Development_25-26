@@ -1,4 +1,4 @@
-# Assignment 2: Box Model Spacing
+# Assignment: Box Model Spacing
 
 ## Objective
 Create a card layout that demonstrates mastery of the CSS Box Model. You will build three information cards with proper spacing using margin, padding, and borders.

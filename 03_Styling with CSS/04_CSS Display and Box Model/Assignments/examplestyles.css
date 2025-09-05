@@ -1,0 +1,73 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: aqua;
+    /* TODO: Add padding */
+}
+
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: darkgoldenrod;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    margin: 15px;
+    border: 5px solid #5b4c4c;
+    background-color: #8a81b7;
+    min-height: 200px;
+}
+
+.card h2 {
+    margin: 15px;
+    padding: 5px;
+    border-bottom: 2px solid #ff0000;
+    color: navajowhite;
+}
+
+.card p {
+    /* TODO: Add margin bottom for paragraph spacing */
+    line-height: 20px
+}
+
+.card-footer {
+    /* TODO: Add margin top */
+    /* TODO: Add padding top */
+    /* TODO: Add top border */
+    /* TODO: Set text alignment */
+}
+
+.button {
+    /* TODO: Add padding */
+    /* TODO: Add margin */
+    /* TODO: Add border */
+    /* TODO: Set background color */
+    /* TODO: Set text color */
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: silver
+}
+
+/* Special card styles */
+.featured {
+    /* TODO: Add special styling for featured card */
+    /* TODO: Consider different border or background */
+}
+

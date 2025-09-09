@@ -9,7 +9,6 @@
 | [1. Styling Tables with CSS](#1-styling-tables-with-css) | Learn to style HTML tables |
 | [2. Styling Forms with CSS](#2-styling-forms-with-css) | Learn to style HTML forms |
 | [Visual Examples](#visual-examples) | Complete working examples |
-| [Assignments](#assignments) | Practice exercises |
 | [Summary](#summary) | Key takeaways |
 | [Resources](#resources) | Additional learning materials |
 
@@ -774,53 +773,6 @@ legend {
 </body>
 </html>
 ```
-
-[↑ Back to Top](#styling-forms-and-tables-with-css)
-
----
-
-## Assignments
-
-### Assignment 1: Style a Product Table
-Create and style a table displaying at least 5 products with columns for Product Name, Category, Price, and Stock Status.
-
-**Requirements:**
-- Use alternating row colors
-- Add hover effects
-- Style the header with a distinct background color
-- Include a table caption
-- Make borders collapsed
-- Add appropriate padding
-
-[View Assignment 1 Template](Assignment/Assignment.md)
-[View Assignment 1 Solution](Assignment/assignment1-solution.md)
-
-### Assignment 2: Create a Styled Registration Form
-Build a registration form with various input types and professional styling.
-
-**Requirements:**
-- Include text, email, password, select, and textarea fields
-- Use fieldsets to group related fields
-- Add focus states to all inputs
-- Style submit button with hover effect
-- Include placeholder text
-- Make the form responsive
-
-[View Assignment 2 Template](Assignment/assignment2-template.md)
-[View Assignment 2 Solution](Assignment/assignment2-solution.md)
-
-### Assignment 3: Build a Survey Form with Table Results
-Create a survey form that collects user preferences and display sample results in a styled table.
-
-**Requirements:**
-- Form should have at least 5 questions using different input types
-- Include radio buttons and checkboxes
-- Style both the form and results table consistently
-- Use the same color scheme for both
-- Add visual feedback for all interactive elements
-
-[View Assignment 3 Template](Assignment/assignment3-template.md)
-[View Assignment 3 Solution](assignment3-solution.md)
 
 [↑ Back to Top](#styling-forms-and-tables-with-css)
 

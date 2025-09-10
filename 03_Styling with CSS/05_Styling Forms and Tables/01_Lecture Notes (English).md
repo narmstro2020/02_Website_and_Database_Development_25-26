@@ -792,7 +792,7 @@ Create and style a table displaying at least 5 products with columns for Product
 - Make borders collapsed
 - Add appropriate padding
 
-[View Assignment 1 Template](Assignment/Assignment.md)
+[View Assignment 1 Template](Assignment/Assignment (English).md)
 [View Assignment 1 Solution](Assignment/assignment1-solution.md)
 
 ### Assignment 2: Create a Styled Registration Form

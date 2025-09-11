@@ -11,7 +11,6 @@
 | [2. Pseudo Elements](#2-pseudo-elements) | Styling specific parts of elements |
 | [3. Attribute Selectors](#3-attribute-selectors) | Selecting elements based on attributes |
 | [Visual Aids](#visual-aids) | Diagrams and examples |
-| [Coding Assignments](#coding-assignments) | Practice exercises |
 | [Summary](#summary) | Key takeaways |
 | [Resources](#resources) | Additional learning materials |
 
@@ -831,26 +830,6 @@ Element selector:       1 point
 [attr$="val"]    /* Ends with */
 [attr*="val"]    /* Contains anywhere */
 ```
-
----
-
-## Coding Assignments
-[↑ Back to Top](#css-pseudo-classes-classes-and-attribute-selectors)
-
-### Assignment 1: Interactive Gallery
-Create an image gallery that uses pseudo-classes for hover effects and nth-child for layout.
-[View Assignment 1 Template](assignment1-template.md)
-[View Assignment 1 Solution](assignment1-solution.md)
-
-### Assignment 2: Styled Article
-Create a blog article that uses pseudo-elements for decorative elements and typography.
-[View Assignment 2 Template](assignment2-template.md)
-[View Assignment 2 Solution](assignment2-solution.md)
-
-### Assignment 3: Advanced Form
-Create a contact form that uses attribute selectors and pseudo-classes for validation styling.
-[View Assignment 3 Template](assignment3-template.md)
-[View Assignment 3 Solution](assignment3-solution.md)
 
 ---
 

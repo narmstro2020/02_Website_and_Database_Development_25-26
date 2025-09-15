@@ -167,7 +167,7 @@ Your styles.css file must demonstrate:
 - Final commit and push
 - Submit GitHub repository link
 
-## Grading Rubric (100 points)
+## Grading Rubric (100 points) (Assessments Category) 
 
 ### HTML Structure & Syntax (20 points)
 - **Exemplary (19-20):** Perfect HTML syntax, all required tags present and properly nested, meaningful semantic structure

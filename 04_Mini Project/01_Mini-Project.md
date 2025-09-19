@@ -101,7 +101,7 @@ Your styles.css file must demonstrate:
 - Push to GitHub repository
 - Write clear commit messages
 
-## Daily Schedule
+## (Recommended) Daily Schedule
 
 ### Day 1: Planning & Setup (86 minutes)
 - Choose your topic and color scheme

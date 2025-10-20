@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code Along 1 — Floats (Image Wrap + Two Columns)</title>
+  <link rel="stylesheet" href="codealong1_style.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Floats: Image Wrap & Two Columns</h1>
+    <p class="sub">Goal: Float an image so text wraps, then build a simple two-column layout.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Step 1: Float an image left</h2>
+      <img class="float-left" src="https://via.placeholder.com/150" alt="Placeholder 150x150">
+      <p>
+        This paragraph should wrap around the floated image. Add more text to see the wrapping behavior.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non quam non mi placerat ultrices.
+        Curabitur lobortis, justo nec placerat pulvinar, orci lorem ornare magna, a hendrerit nisl magna sit amet nulla.
+      </p>
+      <p>Tip: remove the <code>float-left</code> class to observe the difference.</p>
+    </section>
+
+    <section class="card">
+      <h2>Step 2: Float an image right</h2>
+      <img class="float-right" src="https://via.placeholder.com/150" alt="Placeholder 150x150">
+      <p>
+        Now the image is floated to the right. Compare the flow of text on both examples.
+        Try changing margins in CSS to adjust spacing.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Step 3: Two-column layout via floats</h2>
+      <div class="col col-left">Left column content. Add lists, links, or short text blocks here.</div>
+      <div class="col col-right">Right column content. Try adding more content and see how heights affect layout.</div>
+      <!-- No clear here on purpose: footer might ride up in some browsers—fixed in Code Along 2. -->
+    </section>
+  </main>
+
+  <footer class="container footer-note">
+    Footer text. If this overlaps with columns, you'll need a clear (see Code Along 2).
+  </footer>
+</body>
+</html>

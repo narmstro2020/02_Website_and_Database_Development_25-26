@@ -80,7 +80,7 @@ Your styles.css file must demonstrate:
 
 **Background Properties:**
 - background-color
-- background-image (at least once)
+- (optional) background-image (at least once)
 
 
 **Visual Design:**
@@ -91,17 +91,17 @@ Your styles.css file must demonstrate:
 
 #### 4. **File Organization**
 - Create an "images" folder for all image files
-- Create a "css" folder for your stylesheet
+- Create a "css" or "styles" folder for your stylesheet
 - Use clear, descriptive file names (no spaces, lowercase)
 - Organize any sub-pages in logical folders if needed
 
 #### 5. **Version Control**
 - Initialize Git repository on Day 1
-- Make meaningful commits after each work session (minimum 7 commits)
+- Make meaningful commits after each work session
 - Push to GitHub repository
 - Write clear commit messages
 
-## Daily Schedule
+## (Recommended) Daily Schedule
 
 ### Day 1: Planning & Setup (86 minutes)
 - Choose your topic and color scheme
@@ -167,7 +167,7 @@ Your styles.css file must demonstrate:
 - Final commit and push
 - Submit GitHub repository link
 
-## Grading Rubric (100 points)
+## Grading Rubric (100 points) (Assessments Category) 
 
 ### HTML Structure & Syntax (20 points)
 - **Exemplary (19-20):** Perfect HTML syntax, all required tags present and properly nested, meaningful semantic structure

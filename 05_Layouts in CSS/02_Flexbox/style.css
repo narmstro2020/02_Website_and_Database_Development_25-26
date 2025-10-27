@@ -1,0 +1,102 @@
+/* =========================================================
+   Flexbox Activity — Student
+   Goal: 3 cards per row (desktop), 2 per row (tablet), 1 per row (mobile)
+   Concepts: display:flex, flex-wrap, justify-content, align-items, flex: grow/shrink/basis
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --ink: #111827;
+    --muted: #6b7280;
+    --bg: #ffffff;
+    --surface: #f9fafb;
+    --primary: #0e6cff;
+    --border: #e5e7eb;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+}
+
+.site-header {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.site-header h1 {
+    margin: 0 0 .25rem;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.subtitle {
+    margin: 0;
+    color: var(--muted);
+}
+
+.features {
+    padding: 1.5rem;
+}
+
+/* TODO-1: Make .feature-grid a flex container that WRAPS and centers rows */
+.feature-grid {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-content: flex-start; */
+    gap: 1rem;
+    margin-inline: auto;
+    max-width: 1200px;
+}
+
+/* TODO-2: Make .feature act like flexible cards. Use flex shorthand: grow shrink basis. */
+/* Basis should allow ~3-up on desktop without media queries (e.g., 320px). */
+.feature {
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    padding: 1rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    /* flex: 1 1 320px; */
+}
+
+/* TODO-3: Ensure the "Read more" button sits at the bottom using margin-top:auto */
+.btn {
+    align-self: start;
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    padding: .55rem .9rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    /* margin-top: auto; */
+}
+
+/* TODO-4: Add a media query for tablets (~900px) to get 2 cards per row.
+   Tip: You can adjust flex-basis OR use a utility class. */
+@media (max-width: 900px) {
+    /* .feature { flex-basis: 45%; } */
+}
+
+/* TODO-5: Add a mobile breakpoint (~600px) to force 1 card per row */
+@media (max-width: 600px) {
+    /* .feature { flex-basis: 100%; } */
+}
+
+/* TODO-6 (thinking): What is the difference between align-items and align-content here?
+   Try setting align-items on .feature-grid and describe the visual change when items wrap.
+*/

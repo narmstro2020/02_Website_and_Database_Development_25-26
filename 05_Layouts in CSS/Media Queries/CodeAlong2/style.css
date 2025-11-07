@@ -1,0 +1,44 @@
+:root {
+
+}
+
+* {
+}
+
+body {
+}
+
+.brand {
+}
+
+.nav {
+}
+
+.nav a {
+}
+
+.nav a:hover {
+
+}
+
+.content {
+
+}
+
+@media (min-width: 640px) {
+
+}
+
+@media (orientation: landscape) {
+    .brand {
+        padding: 1.5rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+}

@@ -1,0 +1,39 @@
+/* Hero uses stacked gradients: a soft radial glow + diagonal linear wash */
+.hero {
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    padding: 4rem 1.5rem;
+
+
+}
+
+.hero__content {
+    max-width: 720px;
+    text-align: center;
+    color: white;
+}
+
+.hero__content h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+}
+
+.hero__content p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    opacity: 0.95;
+    margin-bottom: 1.25rem;
+}
+
+/* Button (static for now — transitions come in Code Along 2) */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    background: white;
+    color: #5a32ea;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}

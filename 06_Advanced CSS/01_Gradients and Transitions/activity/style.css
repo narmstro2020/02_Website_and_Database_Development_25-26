@@ -1,0 +1,121 @@
+/* Layout shell */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    background: #0c1222;
+    color: #e8eaf1;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+/* Responsive grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+/* Card base + stacked gradients */
+.gcard {
+    padding: 1.25rem;
+    border-radius: 16px;
+    color: white;
+
+    /* TODO 1: Add a stacked gradient background using `background-image`.
+       - Use TWO gradients separated by a comma.
+       - The TOP layer should be a `radial-gradient` that creates a soft glow near one corner.
+         • Make it mostly transparent except for a faint light in the center.
+       - The BOTTOM layer should be a `linear-gradient` at an angle (e.g., 135deg)
+         • Blend 3+ colors smoothly from one side to the other.
+       - Docs: https://www.w3schools.com/css/css3_gradients.asp
+    */
+    /* background-image: ... */
+
+
+    /* TODO 2: Add a `box-shadow` to make the element look lifted off the page.
+       - Use:
+         • horizontal offset (small, like 0)
+         • vertical offset (larger, like 8–12px)
+         • blur radius (larger than the offset)
+         • an RGBA color with partial transparency (dark but see-through).
+       - Docs: https://www.w3schools.com/css/css3_shadows_box.asp
+    */
+    /* box-shadow: ... */
+
+
+    /* TODO 3: Use `transform` to control the starting position.
+       - Set a `translateY` value of 0 so the card is in its default place at rest.
+       - Later, on `:hover`, you can move it slightly up with a negative `translateY`.
+       - Docs: https://www.w3schools.com/css/css3_2dtransforms.asp
+    */
+    /* transform: ... */
+
+
+    /* TODO 4: Add smooth `transition` effects.
+       - Animate at least these properties:
+         • `transform`
+         • `box-shadow`
+         • `filter` (you can add a brightness or blur on hover later).
+       - Use a duration around 200–250ms.
+       - Use a custom `cubic-bezier` timing function for a snappy but smooth feel,
+         or start with `ease` or `ease-out` and then experiment.
+       - Docs: https://www.w3schools.com/css/css3_transitions.asp
+       - Filter reference: https://www.w3schools.com/cssref/css3_pr_filter.php
+    */
+    /* transition: ... */
+
+}
+
+/* Hover effects */
+.gcard:hover {
+    /* TODO 1: Adjust the `transform` so the element appears slightly lifted.
+       - Use `translateY` with a small NEGATIVE value (e.g., -4px to -10px).
+       - This should be used on a hover or active state so the element moves up a bit.
+       - Docs: https://www.w3schools.com/css/css3_2dtransforms.asp
+    */
+    /* transform: ... */
+
+
+    /* TODO 2: Increase the `box-shadow` compared to the normal state.
+       - Make the:
+         • vertical offset larger than before (the shadow drops further down),
+         • blur radius larger (softer edges),
+         • alpha (A in RGBA) a bit higher (darker shadow).
+       - This makes the lifted state feel more dramatic and “elevated.”
+       - Docs: https://www.w3schools.com/css/css3_shadows_box.asp
+    */
+    /* box-shadow: ... */
+
+
+    /* TODO 3: Use `filter` to slightly enhance the colors.
+       - Apply `saturate()` with a value a bit above 1 (e.g., 1.1–1.2)
+         to make colors pop just a little on hover.
+       - You can chain filters later (e.g., `brightness()`, `blur()`) if you want.
+       - Docs: https://www.w3schools.com/cssref/css3_pr_filter.php
+    */
+    /* filter: ... */
+
+}
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+    .gcard {
+        transition: none;
+    }
+
+    .gcard:hover {
+        transform: none;
+    }
+}

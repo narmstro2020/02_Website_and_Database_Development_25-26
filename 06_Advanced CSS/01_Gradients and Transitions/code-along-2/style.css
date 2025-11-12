@@ -1,0 +1,71 @@
+/* Reset-ish */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    color: #0c1222;
+    background: #f8f9ff;
+}
+
+/* Same hero base from Code Along 1 */
+.hero {
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    padding: 4rem 1.5rem;
+}
+
+.hero__content {
+    max-width: 720px;
+    text-align: center;
+    color: white;
+}
+
+.hero__content h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+}
+
+.hero__content p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    opacity: 0.95;
+    margin-bottom: 1.25rem;
+}
+
+/* Button with transitions */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    background: white;
+    color: #5a32ea;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #f3eeff;
+}
+
+/* Card row to practice transitions */
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 2rem auto 3rem;
+    max-width: 960px;
+    padding: 0 1rem;
+}
+
+.card {
+    padding: 1.25rem;
+    border-radius: 16px;
+    color: white;
+}
+
+.card:hover {
+}

@@ -1,32 +1,64 @@
 :root {
+    --bg: lightgray;
+    --fg: white;
+    --brand: pink;
+    --nav-bg: white;
 
 }
 
 * {
+    box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    border: 1 px solid var(--nav-bg);
+    background-color: var(--bg);
+
 }
 
 .brand {
+    color: white;
+    background-color: var(--brand);
+    padding: 1rem;
+
+
+
+
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+
 }
 
 .nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: .5rem .75rem;
+    border-radius: .5rem;
 }
 
 .nav a:hover {
+    background:rgba(0, 0, 0, 0.05);
+    transition: background 3s ease
 
 }
 
 .content {
-
+    padding: 1.5rem
 }
 
 @media (min-width: 640px) {
-
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 @media (orientation: landscape) {
@@ -36,9 +68,12 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+    --bg: white;
+    --fg: salmon;
+    --nav-bg: lightblue;
 
 }
 
 @media (prefers-reduced-motion: reduce) {
-
+    background: rgba( 255, 255, 255, 0.07)
 }

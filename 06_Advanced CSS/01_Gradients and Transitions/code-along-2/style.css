@@ -16,6 +16,10 @@ body {
     display: grid;
     place-items: center;
     padding: 4rem 1.5rem;
+    background-image: radial-gradient(60% 80% at 20% 20%, rgba(255, 255, 255, 0.3), transparent 60%),
+linear-gradient(135deg, #000, rgba(255, 255, 255, 0.3) 100%);
+    background-repeat: no-repeat;
+    backgroud-size: cover;
 }
 
 .hero__content {
@@ -45,6 +49,7 @@ body {
     color: #5a32ea;
     font-weight: 700;
     text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {

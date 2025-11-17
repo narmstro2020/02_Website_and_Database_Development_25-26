@@ -33,80 +33,42 @@ h1 {
     border-radius: 16px;
     color: white;
 
-    /* TODO 1: Add a stacked gradient background using `background-image`.
-       - Use TWO gradients separated by a comma.
-       - The TOP layer should be a `radial-gradient` that creates a soft glow near one corner.
-         • Make it mostly transparent except for a faint light in the center.
-       - The BOTTOM layer should be a `linear-gradient` at an angle (e.g., 135deg)
-         • Blend 3+ colors smoothly from one side to the other.
-       - Docs: https://www.w3schools.com/css/css3_gradients.asp
-    */
-    /* background-image: ... */
+    background-image:
+        /* Top glow — soft radial highlight */
+            radial-gradient(
+                    circle at top left,
+                    rgba(255,255,255,0.25) 0%,
+                    rgba(255,255,255,0.05) 40%,
+                    rgba(255,255,255,0) 70%
+            ),
 
+                /* Bottom main linear blend */
+            linear-gradient(
+                    135deg,
+                    #fd3d3d 0%,
+                    #fd71eb 40%,
+                    #5fffe2 100%
+            );
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
 
-    /* TODO 2: Add a `box-shadow` to make the element look lifted off the page.
-       - Use:
-         • horizontal offset (small, like 0)
-         • vertical offset (larger, like 8–12px)
-         • blur radius (larger than the offset)
-         • an RGBA color with partial transparency (dark but see-through).
-       - Docs: https://www.w3schools.com/css/css3_shadows_box.asp
-    */
-    /* box-shadow: ... */
+    transform: translateY(0);
 
-
-    /* TODO 3: Use `transform` to control the starting position.
-       - Set a `translateY` value of 0 so the card is in its default place at rest.
-       - Later, on `:hover`, you can move it slightly up with a negative `translateY`.
-       - Docs: https://www.w3schools.com/css/css3_2dtransforms.asp
-    */
-    /* transform: ... */
-
-
-    /* TODO 4: Add smooth `transition` effects.
-       - Animate at least these properties:
-         • `transform`
-         • `box-shadow`
-         • `filter` (you can add a brightness or blur on hover later).
-       - Use a duration around 200–250ms.
-       - Use a custom `cubic-bezier` timing function for a snappy but smooth feel,
-         or start with `ease` or `ease-out` and then experiment.
-       - Docs: https://www.w3schools.com/css/css3_transitions.asp
-       - Filter reference: https://www.w3schools.com/cssref/css3_pr_filter.php
-    */
-    /* transition: ... */
-
+    transition:
+            transform 220ms cubic-bezier(0.25, 0.8, 0.25, 1),
+            box-shadow 220ms cubic-bezier(0.25, 0.8, 0.25, 1),
+            filter 220ms cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 /* Hover effects */
 .gcard:hover {
-    /* TODO 1: Adjust the `transform` so the element appears slightly lifted.
-       - Use `translateY` with a small NEGATIVE value (e.g., -4px to -10px).
-       - This should be used on a hover or active state so the element moves up a bit.
-       - Docs: https://www.w3schools.com/css/css3_2dtransforms.asp
-    */
-    /* transform: ... */
+    /* Lift card upward */
+    transform: translateY(-8px);
 
+    /* Stronger shadow for lifted effect */
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.45);
 
-    /* TODO 2: Increase the `box-shadow` compared to the normal state.
-       - Make the:
-         • vertical offset larger than before (the shadow drops further down),
-         • blur radius larger (softer edges),
-         • alpha (A in RGBA) a bit higher (darker shadow).
-       - This makes the lifted state feel more dramatic and “elevated.”
-       - Docs: https://www.w3schools.com/css/css3_shadows_box.asp
-    */
-    /* box-shadow: ... */
-
-
-    /* TODO 3: Use `filter` to slightly enhance the colors.
-       - Apply `saturate()` with a value a bit above 1 (e.g., 1.1–1.2)
-         to make colors pop just a little on hover.
-       - You can chain filters later (e.g., `brightness()`, `blur()`) if you want.
-       - Docs: https://www.w3schools.com/cssref/css3_pr_filter.php
-    */
-    /* filter: ... */
-
+    /* Mild saturation boost */
+    filter: saturate(2.5);
 }
 
 /* Reduced motion respect */

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>CSS Transitions</h1>
+        </header>
+
+        <main id="container">
+            <section class="container-item">
+                <h2>What we know so far with hovering</h2>
+
+                <p>Hover over the div element below, to see the effect:</p>
+                <div id="example-1"></div>
+            </section>
+
+            <section class="container-item">
+                <h2>The transition property</h2>
+
+                <p>
+                    To create a transition effect, you must specify the CSS property you want to
+                    add a transition to, and the duration of the transition.
+                </p>
+                <p>The CSS transition property is a shorthand property for: </p>
+                <ul>
+                    <li>transition-property (Required)</li>
+                    <li>transition-duration (Required)</li>
+                    <li>transition-timing-function</li>
+                    <li>transition-delay</li>
+                </ul>
+                <p> The transition is triggered when there is a change in the element's properties.
+                </p>
+                <p>This often happens within pseudo-classes (:hover, :active, :focus, or :checked).</p>
+                <p> So, from the example above, the transition effect will start when the width property changes value.
+                </p>
+                <p>Now, we add a :hover pseudo-class that specifies a new value for the width property when a user
+                    mouses
+                    over the element.</p>
+                <div id="example-2"></div>
+            </section>
+
+            <section class="container-item">
+                <h2>Change Multiple Property Values</h2>
+
+                <p>You can change multiple properties by separating them by commas.</p>
+                <p>The following example adds a transition effect for the width, height, and background-color
+                    properties, with a duration of 2 seconds for the width, 4 seconds for the height, and 3 seconds for
+                    the background-color</p>
+                <div id="example-3"></div>
+            </section>
+
+            <section class="container-item">
+                <h2>Transition Speed Curve</h2>
+
+                <p>The transition-timing-function property specifies the speed curve of the transition effect.</p>
+
+                <p> This property can have one of the following values:</p>
+
+                <p>linear - transition will keep the same speed from start to end</p>
+
+                <div class="timing" id="example-4">linear</div>
+                <br>
+
+                <p>ease - transition will start slow, then go fast, and end slow (this is default)</p>
+                <div class="timing" id="example-5">ease</div>
+                <br>
+
+                <p>ease-in - transition will start slow</p>
+                <div class="timing" id="example-6">ease-in</div>
+                <br>
+
+                <p>ease-out - transition will end slow</p>
+                <div class="timing" id="example-7">ease-out</div>
+                <br>
+
+                <p>ease-in-out - transition will have a slow start and end</p>
+                <div class="timing" id="example-8">ease-in-out</div>
+                <br>
+
+                <p>cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+                <p>A Cubic Bezier curve is defined by four points P0, P1, P2, and P3. P0 and P3 are the start and the
+                    end of the curve and, in CSS these points are fixed as the coordinates are ratios. P0 is (0, 0) and
+                    represents the initial time and the initial state, P3 is (1, 1) and represents the final time and
+                    the final state.
+
+                    The cubic-bezier() function can be used with the animation-timing-function property and the
+                    transition-timing-function property. </p>
+                <div class="cubic-bezier" id="example-9">cubic-bezier(0,0,1,1)</div>
+                <br>
+                <div class="cubic-bezier" id="example-10">cubic-bezier(0.25,0.1,0.25,1)</div>
+                <br>
+                <div class="cubic-bezier" id="example-11">cubic-bezier(0.42,0,1,1)</div>
+                <br>
+                <div class="cubic-bezier" id="example-12">cubic-bezier(0,0,0.58,1)</div>
+                <br>
+                <div class="cubic-bezier" id="example-13">cubic-bezier(0.42,0,0.58,1)</div>
+                <br>
+
+
+            </section>
+
+            <section class="container-item">
+                <h2>Transition Delay</h2>
+
+                <p>The transition-delay property specifies a delay before the transition starts.</p>
+                <p> The transition-delay value is defined in seconds (s) or milliseconds (ms).</p>
+                <p> The following example has a 1-second delay before starting:</p>
+                <div class="delay" id="example-14"></div>
+            </section>
+
+            <section class="container-item">
+                <h2>Combining Transitions with Transforms</h2>
+
+                <p>The following examples combines a transition with a transform for a &lt;div&gt;
+                </p>
+
+                <button>Click Me!</button>
+                <br>
+                <br>
+
+                <div id="example-15"></div>
+
+            </section>
+
+        </main>
+
+
+    </body>
+</html>

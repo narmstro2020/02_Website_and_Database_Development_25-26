@@ -1,0 +1,101 @@
+body {
+    background: #0c5460;
+    color: #e2f6f6;
+}
+
+#container {
+    background: #4e62a2;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto;
+}
+
+.container-item {
+    background: #0a0f42;
+    padding: 30px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#example-1:hover {
+    width: 300px;
+}
+
+#example-2 {
+}
+
+#example-2:hover {
+}
+
+#example-3 {
+}
+
+#example-3:hover {
+}
+
+.timing {
+}
+
+#example-4:hover {
+
+}
+
+#example-5:hover {
+
+}
+
+#example-6:hover {
+
+}
+
+#example-7:hover {
+
+}
+
+#example-8:hover {
+
+}
+
+.cubic-bezier{
+
+}
+
+#example-9:hover {
+
+}
+
+#example-10:hover {
+);
+}
+
+#example-11:hover {
+
+}
+
+#example-12:hover {
+}
+
+#example-13:hover {
+}
+
+.delay{
+}
+
+#example-14:hover {
+}
+
+button {
+}
+
+button:hover {
+}
+
+#example-15{
+}
+
+#example-15:hover {
+}

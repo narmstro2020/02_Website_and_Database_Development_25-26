@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS 2D Transforms Demo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>CSS 2D and 3D Transforms</h1>
+            <p>Examples of translate, rotate, scale, skew, matrix, and how transform order changes the result.</p>
+        </header>
+
+        <main>
+
+            <!-- translate() -->
+            <section class="transform-section">
+                <h2>The translate() function</h2>
+                <p>
+                    The <code>translate()</code> function moves an element from its current position
+                    according to the parameters given for the X-axis and the Y-axis.
+                </p>
+
+                <div class="examples-grid examples-grid-translate">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+                    <div class="box" id="myDiv1">
+                        Div1 (translate(50px)).
+                    </div>
+
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+                    <div class="box" id="myDiv2">
+                        Div2 (translate(50px, 20px)).
+                    </div>
+
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+                    <div class="box" id="myDiv3">
+                        Div3 (translate(100px, 30px)).
+                    </div>
+                </div>
+            </section>
+
+            <!-- rotate() -->
+            <section class="transform-section">
+                <h2>The rotate() function</h2>
+                <p>
+                    The <code>rotate()</code> function rotates an element clockwise or counter-clockwise
+                    according to a given degree (in 2D space).
+                </p>
+
+                <div class="examples-grid">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv4">
+                        Div4.
+                    </div>
+
+                    <div class="box" id="myDiv5">
+                        Div5.
+                    </div>
+
+                    <div class="box" id="myDiv6">
+                        Div6.
+                    </div>
+                </div>
+            </section>
+
+            <!-- scaleX() -->
+            <section class="transform-section">
+                <h2>The scaleX() function</h2>
+                <p>
+                    The <code>scaleX()</code> function increases or decreases the width of an element.
+                </p>
+
+                <div class="examples-grid">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv7">
+                        Div7.
+                    </div>
+
+                    <div class="box" id="myDiv8">
+                        Div8.
+                    </div>
+
+                    <div class="box" id="myDiv9">
+                        Div9.
+                    </div>
+                </div>
+            </section>
+
+            <!-- scaleY() -->
+            <section class="transform-section">
+                <h2>The scaleY() function</h2>
+                <p>
+                    The <code>scaleY()</code> function increases or decreases the height of an element.
+                </p>
+
+                <div class="examples-grid">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv10">
+                        Div10.
+                    </div>
+
+                    <div class="box" id="myDiv11">
+                        Div11.
+                    </div>
+
+                    <div class="box" id="myDiv12">
+                        Div12.
+                    </div>
+                </div>
+            </section>
+
+            <!-- scale() -->
+            <section class="transform-section">
+                <h2>The scale() function</h2>
+                <p>
+                    The <code>scale()</code> function increases or decreases the size of an element
+                    according to the parameters given for the width and height.
+                </p>
+
+                <div class="examples-grid">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv13">
+                        Div13.
+                    </div>
+
+                    <div class="box" id="myDiv14">
+                        Div14.
+                    </div>
+
+                    <div class="box" id="myDiv15">
+                        Div15.
+                    </div>
+                </div>
+            </section>
+
+            <!-- skewX() -->
+            <section class="transform-section">
+                <h2>The skewX() function</h2>
+                <p>
+                    The <code>skewX()</code> function skews an element along the X-axis by the given angle.
+                </p>
+
+                <div class="examples-grid">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv16">
+                        Div16.
+                    </div>
+
+                    <div class="box" id="myDiv17">
+                        Div17.
+                    </div>
+
+                    <div class="box" id="myDiv18">
+                        Div18.
+                    </div>
+                </div>
+            </section>
+
+            <!-- skewY() -->
+            <section class="transform-section">
+                <h2>The skewY() function</h2>
+                <p>
+                    The <code>skewY()</code> function skews an element along the Y-axis by the given angle.
+                </p>
+
+                <div class="examples-grid">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv19">
+                        Div19.
+                    </div>
+
+                    <div class="box" id="myDiv20">
+                        Div20.
+                    </div>
+
+                    <div class="box" id="myDiv21">
+                        Div21.
+                    </div>
+                </div>
+            </section>
+
+            <!-- skew() -->
+            <section class="transform-section">
+                <h2>The skew() function</h2>
+                <p>
+                    The <code>skew()</code> function skews an element along the X and Y axes by the given angles.
+                </p>
+
+                <p>
+                    The <code>rotate()</code> function can be represented by a <code>skew()</code> where its
+                    arguments are specific opposite values (though in practice you’ll use <code>rotate()</code>).
+                </p>
+
+                <div class="examples-grid">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv22">
+                        Div22.
+                    </div>
+
+                    <div class="box" id="myDiv23">
+                        Div23.
+                    </div>
+
+                    <div class="box" id="myDiv24">
+                        Div24.
+                    </div>
+
+                    <div class="box" id="myDiv25">
+                        Div25.
+                    </div>
+
+                    <div class="box" id="myDiv26">
+                        Div26.
+                    </div>
+                </div>
+            </section>
+
+            <!-- matrix() -->
+            <section class="transform-section">
+                <h2>The matrix() function</h2>
+                <p>
+                    The parameters are as follows:
+                    <code>matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</code>.
+                    It lets you combine multiple transforms into one matrix.
+                </p>
+
+                <div class="examples-grid">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv27">
+                        Using the matrix() function.
+                    </div>
+
+                    <div class="box" id="myDiv28">
+                        Another use of the matrix() function.
+                    </div>
+
+                    <div class="box" id="myDiv29">
+                        Another use of the matrix() function.
+                    </div>
+                </div>
+            </section>
+
+            <!-- rotateX() -->
+            <section class="transform-section">
+                <h2>The rotateX() function</h2>
+                <p>
+                    The <code>rotateX()</code> function rotates an element around the X-axis (horizontal axis),
+                    tilting it toward or away from you in 3D space.
+                </p>
+
+                <div class="examples-grid examples-grid-3d">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv37">
+                        rotateX(25deg)
+                    </div>
+
+                    <div class="box" id="myDiv38">
+                        rotateX(45deg)
+                    </div>
+
+                    <div class="box" id="myDiv39">
+                        rotateX(-45deg)
+                    </div>
+                </div>
+            </section>
+
+            <!-- rotateY() -->
+            <section class="transform-section">
+                <h2>The rotateY() function</h2>
+                <p>
+                    The <code>rotateY()</code> function rotates an element around the Y-axis (vertical axis),
+                    swinging it left or right like a door in 3D space.
+                </p>
+
+                <div class="examples-grid examples-grid-3d">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv40">
+                        rotateY(25deg)
+                    </div>
+
+                    <div class="box" id="myDiv41">
+                        rotateY(45deg)
+                    </div>
+
+                    <div class="box" id="myDiv42">
+                        rotateY(-45deg)
+                    </div>
+                </div>
+            </section>
+
+            <!-- rotateZ() -->
+            <section class="transform-section">
+                <h2>The rotateZ() function</h2>
+                <p>
+                    The <code>rotateZ()</code> function rotates an element around the Z-axis (coming out of the screen).
+                    In practice, <code>rotateZ()</code> behaves like <code>rotate()</code> for 2D layouts.
+                </p>
+
+                <div class="examples-grid examples-grid-3d">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+
+                    <div class="box" id="myDiv43">
+                        rotateZ(25deg)
+                    </div>
+
+                    <div class="box" id="myDiv44">
+                        rotateZ(45deg)
+                    </div>
+
+                    <div class="box" id="myDiv45">
+                        rotateZ(-45deg)
+                    </div>
+                </div>
+            </section>
+
+            <!-- Combined transforms -->
+            <section class="transform-section">
+                <h2>Combined transforms</h2>
+                <p>Here are some examples that combine multiple transform functions.</p>
+
+                <div class="examples-grid examples-grid-translate">
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+                    <div class="box" id="myDiv30">
+                        Combined: translate + rotate
+                    </div>
+
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+                    <div class="box" id="myDiv31">
+                        Combined: scale + skewX
+                    </div>
+
+                    <div class="box">
+                        This is a normal element.
+                    </div>
+                    <div class="box" id="myDiv32">
+                        Combined: translate + scale + rotate
+                    </div>
+                </div>
+            </section>
+
+            <!-- Transform order matters -->
+            <section class="transform-section">
+                <h2>Transform order matters</h2>
+                <p>
+                    CSS applies transforms from right to left. So in
+                    <code>transform: A B;</code>, the browser actually applies <code>B</code> first, then <code>A</code>.
+                    That’s why the order changes the result.
+                </p>
+
+                <article>
+                    <h3>Example 1: translate + rotate vs rotate + translate</h3>
+
+                    <div class="examples-grid examples-grid-translate">
+                        <div class="box">
+                            This is a normal element.
+                        </div>
+                        <div class="box" id="myDiv33">
+                            translate(100px, 0) then rotate(30deg)
+                        </div>
+
+                        <div class="box">
+                            This is a normal element.
+                        </div>
+                        <div class="box" id="myDiv34">
+                            rotate(30deg) then translate(100px, 0)
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>Example 2: scale + translate vs translate + scale</h3>
+
+                    <div class="examples-grid examples-grid-translate">
+                        <div class="box">
+                            This is a normal element.
+                        </div>
+                        <div class="box" id="myDiv35">
+                            scale(1.5) then translate(80px, 0)
+                        </div>
+
+                        <div class="box">
+                            This is a normal element.
+                        </div>
+                        <div class="box" id="myDiv36">
+                            translate(80px, 0) then scale(1.5)
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>CSS transforms playground.</p>
+        </footer>
+    </body>
+</html>

@@ -1,48 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Code Along 2 — Clears & Clearfix</title>
-  <link rel="stylesheet" href="codealong2_style.css">
-</head>
-<body>
-  <header class="container">
-    <h1>Clears & Clearfix</h1>
-    <p class="sub">Goal: Use <code>clear</code> and a clearfix utility to prevent float overlap.</p>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats and Clears - Code Along 2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Floats and Clears</h1>
+    </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Step 1: The overlap problem (no clear)</h2>
-      <div class="demo-row">
-        <div class="box left">Left (floated)</div>
-        <div class="box right">Right (floated)</div>
-        <!-- Parent collapses because kids are floated; following content may overlap. -->
+    <section class="container">
+      <div class="box left">
+        <h2>Left Float</h2>
+        <p>This box is floated left. Notice how it moves to the left side of its container and allows other elements to wrap around it.</p>
       </div>
+
+      <div class="box right">
+        <h2>Right Float</h2>
+        <p>This box is floated right. It sits on the right edge of its container, allowing text or other boxes to flow beside it.</p>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <p class="content">
+        This paragraph sits below both floated boxes because we used the clearfix. Without clearing the floats, this text would wrap around the floated boxes, breaking the layout.
+      </p>
     </section>
 
-    <section class="card">
-      <h2>Step 2: Add a clearing element</h2>
-      <div class="demo-row">
-        <div class="box left">Left (floated)</div>
-        <div class="box right">Right (floated)</div>
-        <div class="clear-both"></div>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Step 3: Use a clearfix utility</h2>
-      <div class="demo-row clearfix">
-        <div class="box left">Left (floated)</div>
-        <div class="box right">Right (floated)</div>
-        <!-- No extra clearing div needed -->
-      </div>
-    </section>
-  </main>
-
-  <footer class="container footer-note">
-    Footer stays below content when cleared correctly.
-  </footer>
-</body>
+    <footer>
+      <p>Floats and Clears Example © 2025</p>
+    </footer>
+  </body>
 </html>
